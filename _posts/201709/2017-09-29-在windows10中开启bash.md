@@ -9,6 +9,12 @@ categories: post
 tags: [ubuntu, bash, windows]
 ---
 
+>个人环境配置
+```
+OS 名称: Microsoft Windows 10 企业版
+OS 版本: 10.0.15063 暂缺 Build 15063
+```
+
 ## 在主页**更新和安全** 中选中**开发人员模式**
 
 第一次开启需要联网,开启开发人员模式需要下载一些东西
