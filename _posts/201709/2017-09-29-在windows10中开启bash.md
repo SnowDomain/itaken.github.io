@@ -6,7 +6,7 @@ date: 2017-09-29 10:36:51 +0800
 image: true
 
 categories: post
-tags: [ubuntu, bash, windows]
+tags: [ubuntu, bash, windows, 问题集]
 ---
 
 >个人环境配置
