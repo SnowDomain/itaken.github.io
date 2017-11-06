@@ -11,7 +11,7 @@ tags: [git, 问题集]
 
 <mark>问题描述</mark>
 
-使用gitkraken `git pull` 拉取更新内容错误, 提示: `Failed to authenticate SSH session: Invalid key data, not base64 encodeed.`
+使用[gitkraken](https://www.gitkraken.com/) `git pull` 拉取更新内容错误, 提示: `Failed to authenticate SSH session: Invalid key data, not base64 encodeed.`
 
 ![authenticate error]({{ site.url }}/assets/images/201710/12-02.png)
 
