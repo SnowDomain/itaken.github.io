@@ -41,13 +41,13 @@ for some common reasons and solutions.  Include the entire stack trace
 above this error message when asking for help.
 ```
 
+也安装了 `python3-pycuda` , `python3-pycuda-dbg` 但是还是不可以.
+
 <mark>解决方法</mark>
 
-安装`python3-pycuda`  即可.
+需要安装 `cuda` 和 `cudnn`.
 
-```bash
-$ sudo apt install python3-pycuda python3-pycuda-dbg
-```
+下载`CUDA Toolkit`, 以及 `NVIDIA cuDNN` 并安装.
 
 ---
 
