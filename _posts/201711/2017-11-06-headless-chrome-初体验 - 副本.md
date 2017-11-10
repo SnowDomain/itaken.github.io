@@ -29,39 +29,43 @@ pip install selenium
 4. 修改`CHROME_PATH`和`CHROMEDRIVER_PATH`, 运行代码:
 
 ```python
+#!/usr/bin/evn python
+# coding=utf8
 '''
 python 页面截图
 '''
 
-from optparse import OptionParser
-
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-CHROME_PATH = 'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'  # chrome地址
-CHROMEDRIVER_PATH = 'C:\chromedriver_win32\chromedriver.exe'  # chromedriver 地址
-WINDOW_SIZE = "1920,1080"  # 窗口大小
+WINDOW_SIZE = "1920,1048"  # 窗体大小
+CHROME_PATH = r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"  # chrome 路径
+CHROMEDRIVER_PATH = r"C:\chromedriver_win32\chromedriver.exe" # driver 路径  
 
-chrome_options = Options()  
-chrome_options.add_argument("--headless")  
+chrome_options = Options()
+chrome_options.add_argument("--headless")
 chrome_options.add_argument("--window-size=%s" % WINDOW_SIZE)
 chrome_options.binary_location = CHROME_PATH
 
-def make_screenshot(url, output):
-    # if not url.startswith('http'):
-    #     raise Exception('URLs need to start with "http"')
-
-    driver = webdriver.Chrome(
-        executable_path=CHROMEDRIVER_PATH,
+'''
+生成快照
+'''
+def take_shot(url, path="screenshot.png"):
+    chrome_driver = webdriver.Chrome(
+        executable_path=CHROMEDRIVER_PATH, 
         chrome_options=chrome_options
-    )  
-    driver.get(url)   # 获取内容
-    driver.save_screenshot(output)  # 内容保存为快照
-    driver.close()
+    )
 
+    chrome_driver.get(url)
+    chrome_driver.save_screenshot(path)  # 保存快照
+    # print(chrome_driver.current_url)  # 当前 url
+    chrome_driver.close()
+
+
+'''
+主函数
+'''
 if __name__ == '__main__':
-    url = "http://www.baidu.com"
-    path = "./screenshot.png"
+    take_shot("http://www.baidu.com", path="screenshot.png")
 
-    make_screenshot(url, path)
 ```
