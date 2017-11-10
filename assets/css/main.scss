@@ -17,13 +17,17 @@ $browser-minimum-versions:("ie":"8");
 // 字体 图标
 @import "font-awesome/css/font-awesome.min.css";
 
+%font-default {
+    font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+    font-size: .8em
+}
+
 body{
     margin: 0;
     padding: 0;
-    // font-family: 'lucida grande','lucida sans unicode',lucida,helvetica,'Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif,'Verdana', 'SimSun';
-    font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
     background: #fffefa;
     min-width: 412px;   // 最小尺寸
+    @extend %font-default;
 }
 // common
 .hide{
@@ -100,8 +104,11 @@ body{
         max-width: 990px;
         overflow: hidden;
     }
-    span{
-        font-family: 'lucida grande','lucida sans unicode',lucida,helvetica,'Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif,'Verdana', 'SimSun';
+    code{
+        @extend %font-default;
+        span{
+            @extend %font-default;
+        }
     }
 }
 // footer
