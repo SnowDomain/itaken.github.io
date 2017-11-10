@@ -34,7 +34,7 @@ phabricator/ $ git clone https://github.com/phacility/phabricator.git
 
 ```
 <VirtualHost *:80>
-    ServerAdmin chenweibiao@zuzuche.com
+    ServerAdmin regelhh@gmail.com
     ServerName v.local
     DocumentRoot /var/www/html/phabricator/phabricator/webroot
     RewriteEngine on
