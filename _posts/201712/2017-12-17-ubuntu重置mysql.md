@@ -66,7 +66,6 @@ $ sudo apt purge mysql-server mysql-server-5.7 mysql-client-5.7 mysql-client-cor
 $ sudo apt install mysql-client-5.7 mysql-server-5.7 -y
 ```
 
-###
-更多阅读
+## 更多阅读
 
 - [ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)](https://stackoverflow.com/questions/11657829/error-2002-hy000-cant-connect-to-local-mysql-server-through-socket-var-run)
