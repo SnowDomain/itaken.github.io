@@ -17,11 +17,11 @@ GIT地址: https://github.com/phacility/phabricator
 
 ![phabricator]({{ site.url }}/assets/images/201711/10-01.png)
 
->不支持 windows 系统, 所以需要在 linux 下搭建, 官方教程地址: https://secure.phabricator.com/book/phabricator/article/installation_guide/
+>**不支持** windows 系统, 所以需要在 linux 下搭建, 官方教程地址: [https://secure.phabricator.com/book/phabricator/article/installation_guide/](https://secure.phabricator.com/book/phabricator/article/installation_guide/)
 
 ---
 
-* 搭建 **LAMP**(apache+mysql+php), 或者 **LNMP**(Nginx+mysql+php) 环境,  开启 `ssl` 和 `rewrite`
+* 搭建 **LAMP**(Apache+mysql+php), 或者 **LNMP**(Nginx+mysql+php) 环境,  开启 `ssl` 和 `rewrite`
 * 安装 `git`, `git-core`, php插件 `php-curl`,  `php-apcu` (可选), `php-soap`, `php-cli`
 * 定位到需要搭建的目录, 从 **github** 上拉取源代码
 
